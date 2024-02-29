@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>IC50 Calculator</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            margin-right: 400px;
+            margin-left: 200px;
+        }
+
+        .input-group label {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            font-size: 28px;
+        }
+
+        .result-box {
+            background-color: lightblue;
+            font-size: 28px;
+            font-weight: bold;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>IC50 Calculator</h1>
+
+    <div class="container">
+        <div class="input-group">
+            <label for="concentration1">Concentration 1 (uM):</label>
+            <input id="concentration1" type="number" step="any" required>
+        </div>
+        <div class="input-group">
+            <label for="percentage1">Inhibition Percentage 1 (%):</label>
+            <input id="percentage1" type="number" step="any" required>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="input-group">
+            <label for="concentration2">Concentration 2 (uM):</label>
+            <input id="concentration2" type="number" step="any" required>
+        </div>
+        <div class="input-group">
+            <label for="percentage2">Inhibition Percentage 2 (%):</label>
+            <input id="percentage2" type="number" step="any" required>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="input-group">
+            <label for="concentration3">Concentration 3 (uM):</label>
+            <input id="concentration3" type="number" step="any" required>
+        </div>
+        <div class="input-group">
+            <label for="percentage3">Inhibition Percentage 3 (%):</label>
+            <input id="percentage3" type="number" step="any" required>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="input-group">
+            <label for="concentration4">Concentration 4 (uM):</label>
+            <input id="concentration4" type="number" step="any" required>
+        </div>
+        <div class="input-group">
+            <label for="percentage4">Inhibition Percentage 4 (%):</label>
+            <input id="percentage4" type="number" step="any" required>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="input-group">
+            <label for="concentration5">Concentration 5 (uM):</label>
+            <input id="concentration5" type="number" step="any" required>
+        </div>
+        <div class="input-group">
+            <label for="percentage5">Inhibition Percentage 5 (%):</label>
+            <input id="percentage5" type="number" step="any" required>
+        </div>
+    </div>
+
+    <button onclick="calculateIC50()" style="font-size: 28px; font-weight: bold;">Calculate IC50</button>
+
+    <div id="result" class="result-box"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
